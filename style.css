@@ -1,0 +1,39 @@
+body {
+  background-color: #fdfdff;
+}
+
+/* Header */
+
+h1.title {
+  font-size: 60px;
+  text-align: center;
+  font-family: monospace;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/* Main container */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameBoard {
+  min-width: 500px;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.square {
+  background-color: wheat;
+  border: 4px solid white;
+  cursor: pointer;
+}
+
+.square:hover {
+  background-color: bisque;
+}
