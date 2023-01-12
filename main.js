@@ -1,4 +1,5 @@
 const board = document.getElementById("gameBoard");
+const form = document.querySelector("#form");
 
 const circle = "⭕";
 const cross = "❌";
@@ -7,8 +8,21 @@ const PlayerFactory = (username, controller) => {
   return { username, controller };
 };
 
-const player1 = PlayerFactory("carlos", cross);
-const player2 = PlayerFactory("Roberto", circle);
+function closeForm() {
+  document.querySelector(".gameOptions").style.visibility = "hidden";
+}
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  closeForm();
+  player1Name = document.getElementById("player1Name").value;
+  player2Name = document.getElementById("player2Name").value;
+  console.log(player1);
+});
+
+let player1 = PlayerFactory(player1Name, cross);
+let player2 = PlayerFactory(player2Name, circle);
+console.log(player1);
 
 const gameBoard = (() => {
   let board = [
