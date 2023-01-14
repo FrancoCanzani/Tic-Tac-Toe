@@ -309,9 +309,13 @@ button:active {
 
 /* Footer */
 
-footer img {
-  bottom: 3px;
-  height: 20px;
+footer {
+  margin-top: 1rem;
   position: fixed;
+  bottom: 3px;
   right: 3px;
+}
+
+footer img {
+  height: 20px;
 }
