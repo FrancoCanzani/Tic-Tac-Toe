@@ -24,6 +24,11 @@ const gameBoard = (() => {
   };
 })();
 
+// Reload the page to reset the game
+function restart() {
+  window.location.reload();
+}
+
 function playAgain() {
   // reset game board
   gameBoard.board = [
@@ -126,11 +131,6 @@ const game = (() => {
     }
   }
 
-  // Reload the page to reset the game
-  function restart() {
-    window.location.reload();
-  }
-
   function handleSquareClick(id, row, col) {
     const square = document.getElementById(id);
     square.addEventListener("click", function () {
@@ -172,7 +172,6 @@ const game = (() => {
     showWinner,
     isBoardFull,
     checkWin,
-    restart,
     handleSquareClick,
     initGame,
   };
