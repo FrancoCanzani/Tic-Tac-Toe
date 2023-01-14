@@ -1,39 +1,31 @@
 # Tic-Tac-Toe
 
-const personFactory = (name, age) => {
-const sayHello = () => console.log("hello!");
-redisplay { name, age, sayHello };
-};
+A simple implementation of the classic Tic Tac Toe game, where players take turns marking a square on a 3x3 grid with their X or O, and the player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.
 
-const jeff = personFactory("jeff", 27);
+## How to play
 
-console.log(jeff.name); // 'jeff'
+- Start the game by opening the game in your browser.
+- Fill in the form to enter the names of the players.
+- Click on the "Start Game" button to begin.
+- Players take turns clicking on a square on the game board to place their X or O.
+- The first player to get three of their marks in a row wins the game.
+- If the board is full and no one wins, the game is a tie.
+- Click on the "Play Again" button to start a new game.
 
-jeff.sayHello();
+## Features
 
-const calculator = (() => {
-const add = (a, b) => a + b;
-const sub = (a, b) => a - b;
-const mul = (a, b) => a \* b;
-const div = (a, b) => a / b;
-redisplay {
-add,
-sub,
-mul,
-div,
-};
-})();
+- Player can choose whether to play as X or O.
+- The game board is 3x3 squares.
+- The game will check if the game is a win or tie.
+- The game will display the winner.
+- The game will allow to play again after a game is over.
 
-calculator.add(3, 5); // 8
-calculator.sub(6, 2); // 4
-calculator.mul(14, 5534); // 77476
+## Technical Implementation
 
-Tic tac toe logic:
+- The game is built using JavaScript, HTML and CSS.
+- The game logic is implemented using functions and objects in JavaScript.
+- The game board is represented as a 2-dimensional array in JavaScript.
+- The game uses the DOM API to update the game board and display the winner.
+- The game uses event listeners to handle user interactions.
 
-2 players
-1 player X and 1 player O
-Board has 3 rows and 3 columns of the same size
-X always starts
-Cant repeat any movement neither override a choice
-First to have 3 in a row wins
-If no one can make it, is a draw
+
